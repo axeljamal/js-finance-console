@@ -117,3 +117,13 @@ average =
   changeInNet.reduce((acc, val) => acc + Number(val), 0) / changeInNet.length;
 let averageChanges = average.toFixed(2);
 console.log("Average Change:", "$" + averageChanges);
+
+// Greatest Profit and Loss
+let greatestProfit = Math.max(...changeInNet);
+let gratestLoss = Math.min(...changeInNet);
+
+let dateOfgP = finances[changeInNet.indexOf(greatestProfit) + 1][0];
+let dateOfgL = finances[changeInNet.indexOf(gratestLoss) + 1][0];
+
+console.log(`Greatest Profit: ${dateOfgP} ($${greatestProfit})`);
+console.log(`Greatest Loss: ${dateOfgL} ($${gratestLoss})`);
