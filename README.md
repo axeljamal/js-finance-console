@@ -8,4 +8,4 @@ Please find the deployed site link here: https://axeljamal.github.io/js-finance-
 WHEN on the page, right-click and choose 'inspect'.
 The console should display the following:
 
-<img width="444" alt="Screenshot 2023-01-09 at 13 39 40" src="https://user-images.githubusercontent.com/119621308/211325127-64093d1a-def4-4a89-904a-c4a83df1c30c.png">
+<img width="774" alt="Screenshot 2023-01-09 at 15 39 47" src="https://user-images.githubusercontent.com/119621308/211347456-f8fed1e8-96a6-4adf-8654-85fa7df6f3d3.png">
