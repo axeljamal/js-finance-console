@@ -99,7 +99,7 @@ finances.forEach((res) => {
 
 // Total Months
 let numOfMonths = dates.length;
-console.log("Total Months:", numOfMonths);
+console.log("Total Months: " + numOfMonths);
 
 // Net Total Amount
 let netTotal = financesVal.reduce((acc, val) => acc + Number(val), 0);
