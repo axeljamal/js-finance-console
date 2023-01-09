@@ -100,3 +100,20 @@ finances.forEach((res) => {
 // Total Months
 let numOfMonths = dates.length;
 console.log("Total Months:", numOfMonths);
+
+// Net Total Amount
+let netTotal = financesVal.reduce((acc, val) => acc + Number(val), 0);
+console.log("Total:", " $" + netTotal);
+
+// Average of Changes
+let average = 0;
+let changeInNet = [];
+
+for (i = 1; i < financesVal.length; i++) {
+  let differences = financesVal[i] - financesVal[i - 1];
+  changeInNet.push(differences);
+}
+average =
+  changeInNet.reduce((acc, val) => acc + Number(val), 0) / changeInNet.length;
+let averageChanges = average.toFixed(2);
+console.log("Average Change:", "$" + averageChanges);
